@@ -1,47 +1,137 @@
-/* Style the header with a background color */
+body {
+	padding: 10px;
+	margin: 1%;
+}
+
 header {
-	background-color: #C0C0C0; /* Silver */
+	background-color: #848E66;
+	background-image: url("../images/flywheel.jpg");
+	background-size:100%;
+	padding:20px;
 }
-/* h1 elements should be centered and have a new font color */
+
 h1 {
-	color: #FFFFFF; /* White */
 	text-align: center;
+	color: #FFFFFF;
+	font-size: x-large;
 	text-transform: uppercase;
-	font-family: "Trebuchet MS", Helvetica, sans-serif; 
-	font-size: 40px;
 }
-/* h2 elements have a new font color */
-h2 {
-	color: #00008B; /* DarkBlue */
-	text-transform: uppercase; /* style headings to have uppercase text */
-	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
-	font-size: 30px;
-}
-/* sections should have a new background color */
-section {
-	background-color: #A9A9A9; /* DarkGray */
-}
-/* a elements should be centered and have a new font color and background color */
-a {
+
+nav a{
+	display: inline-block;
+	margin: 2%;
+		
+	-webkit-border-radius: 3;
+	-moz-border-radius: 3;
+	-o-border-radius: 3;
+	border-radius: 5px;
+
+	text-decoration: none;
+	padding: 2%;
+
+	color: #000000;
 	text-align: center;
-	color: #000000; /* Black */
-	background-color: #D3D3D3; /* LightGray */ 
-	font-family: Arial, Helvetica, sans-serif;
-	font-weight: bold;
+	vertical-align: middle;
+	background-color: rgba(218,234,213,0.60);
+	width:150px;
+	height: 20px;
 }
-/* the images should not be on the page */ 
+
+.active {
+	background-color: #FFFFFF;
+}
+
+.left {
+	background-color: #848E66;
+	width: 24%;
+	float:left;
+	padding: 5% 0;
+}
+
+.right {
+	width:74%;
+	display: inline-block;
+	padding-left: 2%;
+}
+
+.left img {
+	border: solid 1px #000000;
+	width: 80%;
+	margin: 10%;
+}
+
 img {
-	display: none;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	width: 150px;
+	border: 2px solid black;
 }
-p {
-	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;	
-}
-table, td, th {
-    border: 1px solid DimGray;
-}
+
+
+
 table {
-    border-collapse: collapse;
+    padding: 2%;
+    margin: 0 auto;
+    line-height: 50px;
+    width: 65%;
+    padding-bottom: 5%;
 }
+
+
 th {
+    background-color: 	#9ACD32;
+    padding: 2%;
+    font-variant: small-caps;
+    font-size: 100%;
+    color: #ffffff;
+    line-height: 40px;
+    border-radius: 10px 10px 0 0;
+    border-bottom: 2px solid #339933;
+}
+
+th {
+    background-color: 	#9ACD32;
+    padding: 2%;
+    font-variant: small-caps;
+    font-size: 100%;
+    color: #ffffff;
+    line-height: 40px;
+    border-radius: 10px 10px 0 0;
+    border-bottom: 2px solid #339933;
+}
+th, tr td {
+    text-align: center;
+}
+
+th:first-child, tr td:first-child {
     text-align: left;
 }
+
+/* opacity of table rows*/
+tr td {
+    opacity: 0.6;
+}
+
+
+/*opacity of table rows when hovered over*/
+tr:hover td {
+    opacity: 1;
+    color: #339933;
+    font-weight: bold;
+    font-size:100%;
+    line-height: 60px;
+}
+
+/*the table cells*/
+td {
+    background-color: #90EE90;
+    padding-left: 2%;
+    padding-right: 2%;
+    font-size: 90%;
+    border-bottom: 2px solid #ffffff;
+}
+
+
